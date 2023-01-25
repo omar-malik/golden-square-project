@@ -1,4 +1,4 @@
-def say_hello(name)
+git def say_hello(name)
   return "hello #{name}"
 end
 
@@ -10,6 +10,8 @@ def encode(plaintext, key)
   return ciphertext_chars.join
 end
 
+
+#challenge
 def decode(ciphertext, key)
   cipher = key.chars.uniq + (('a'..'z').to_a - key.chars)
   plaintext_chars = ciphertext.chars.map do |char|
