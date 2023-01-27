@@ -49,7 +49,7 @@ RSpec.describe DiaryEntry do
     end
 
     it "returns first chunk again once last chunk was called" do
-      diary_entry = DiaryEntry.new("title", "a b c d e f g h i j ")
+      diary_entry = DiaryEntry.new("title", "a b c d e f g h i j k l")
       diary_entry.reading_chunk(2, 2)
       diary_entry.reading_chunk(2, 2)
       diary_entry.reading_chunk(2, 2)
